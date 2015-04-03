@@ -19,6 +19,39 @@
 
     <preference name="phonegap-version" value="3.7.0"/>
 
+
+    <feature name="http://api.phonegap.com/1.0/device" />
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/storage"/>
+    <feature name="http://api.phonegap.com/1.0/capture"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" onload="true" />
+    </feature>
+    <feature name="Keyboard">
+        <param name="ios-package" value="CDVKeyboard" onload="true" />
+    </feature>
+
+    <gap:plugin name="nl.x-services.plugins.launchmyapp">
+      <param name="URL_SCHEME" value="rneitzel" />
+    </gap:plugin>
+    <gap:plugin name="com.phonegap.plugin.statusbar" />
+    <gap:plugin name="dk.vertica.keyboard"/>
+    <gap:plugin name="org.apache.cordova.core.device" />
+    <gap:plugin name="org.apache.cordova.core.device-orientation" />
+    <gap:plugin name="org.apache.cordova.core.camera" />
+    <gap:plugin name="org.apache.cordova.core.dialogs" />
+    <gap:plugin name="org.apache.cordova.core.network-information" />
+    <gap:plugin name="org.apache.cordova.core.console" />
+    <gap:plugin name="org.apache.cordova.core.splashscreen" />
+    <gap:plugin name="nl.x-services.plugins.insomnia" />
+    <gap:plugin name="org.apache.cordova.core.inappbrowser" />
+    <gap:plugin name="it.mobimentum.phonegapspinnerplugin"/>
+    
+
     <preference name="orientation" value="default"/>
     <preference name="target-device" value="universal"/>
     <preference name="fullscreen" value="true"/>
@@ -37,9 +70,6 @@
     <preference name="android-minSdkVersion" value="7"/>
     <preference name="android-installLocation" value="auto"/>
 
-    <feature name="StatusBar">
-      <param name="ios-package" value="CDVStatusBar" onload="true"/>
-    </feature>
 
     <icon src="icon.png"/>
     <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi"/>
