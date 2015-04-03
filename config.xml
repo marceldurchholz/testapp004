@@ -46,6 +46,7 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
+    <gap:plugin name="com.pushwoosh.plugins.pushwoosh" version="3.4.2" />
     <!--
     <feature name="http://api.phonegap.com/1.0/storage"/>
     <feature name="http://api.phonegap.com/1.0/capture"/>
