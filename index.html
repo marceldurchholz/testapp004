@@ -1,0 +1,307 @@
+<!doctype html>
+<!--
+<html lang="en" ng-app="main">
+-->
+<html lang="en" ng-app="main" ng-strict-di>
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <!--[if IE]>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <![endif]-->
+    <!-- <script src="scripts/modernizr.js"></script> -->
+    <title>IONIC TEST APP</title>
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- <script src="http://js.pusher.com/2.2/pusher.js"></script> -->
+    
+    <script>
+        var DEBUG = false;
+        if (DEBUG===false) {
+            console.log = function() {};
+            console.dir = function() {};
+            console.info = function() {};
+        }
+    </script>
+
+    
+    <!--
+    
+    cd C:\conemu\apps\angular-famous-ionic_001
+    
+    gulp browsersync
+
+    -->
+
+
+    <!-- 
+    @TODO:
+    Angular-Moment:
+    https://github.com/urish/angular-moment
+    -->
+    <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/lang/de.min"></script>
+    -->
+    
+    <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
+    -->
+
+    <!--
+    https://cdnjs.cloudflare.com/ajax/libs/angular-moment/0.9.2/angular-moment.min.js
+    https://github.com/urish/angular-moment
+    -->
+
+
+</head>
+
+<body>
+
+<!--
+
+
+http://codepen.io/TimothyKrell/pen/XJparR?editors=101
+https://github.com/thaiat/generator-angular-famous-ionic#directive
+
+Ionic Codepen.io Demos
+http://codepen.io/ionic/public-list/
+-->
+
+<!--<body class="platform-cordova" layout="column" flex>-->
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <!--    
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+
+    <ui-view layout="column" flex>
+    </ui-view>
+
+    <ion-nav-view></ion-nav-view>
+    -->
+
+
+    <!--
+    random user generator:
+    http://api.randomuser.me/
+    -->
+
+    <!--
+    hover css3 animarion classes:
+    http://ianlunn.github.io/Hover/
+    -->
+
+    <ion-nav-view layout="column" flex></ion-nav-view>
+
+    <!--
+    <script src="cordova.js"></script>
+    <script src="phonegap.js"></script>
+    -->
+    <script type="text/javascript" src="https://raw.githubusercontent.com/Pushwoosh/phonegap-3-sample-app/master/www/js/PushwooshAndroid.js"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/Pushwoosh/phonegap-3-sample-app/master/www/js/PushwooshiOS.js"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/Pushwoosh/phonegap-3-sample-app/master/www/js/index.js"></script>
+
+    <script src="scripts/bundle.js"></script>
+    <script src="http://momentjs.com/downloads/moment-timezone-with-data.js"/>
+    <script src="http://rawgit.com/qw4n7y/7282780/raw/6ae3b334b295f93047e8f3ad300db6bc4387e235/moment-timezone-data.js"/>
+    <script>
+        // moment.locale('de');
+        // alert(moment(1316116057189).fromNow());
+    </script>
+    <!--
+    <script src="/angular/i18n/angular-locale_de.js"></script>
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-i18n/1.2.15/angular-locale_de.js"></script>
+
+    <style>
+        a, .no_underline {
+            text-decoration: none !important;
+        }
+
+        .redi {
+            background-color:red !important;
+        }
+    </style>
+
+    <style>
+
+        /*
+        http://bootsnipp.com/snippets/featured/support-glyph-and-fa-icon-inside-input
+        "Support glyph and fa icon inside input"
+        */
+
+        .center-block {
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .input-group .icon-addon .form-control {
+            border-radius: 0;
+        }
+
+        .icon-addon {
+            position: relative;
+            color: #555;
+            display: block;
+        }
+
+        .icon-addon:after,
+        .icon-addon:before {
+            display: table;
+            content: " ";
+        }
+
+        .icon-addon:after {
+            clear: both;
+        }
+
+        .icon-addon.addon-md .glyphicon,
+        .icon-addon .glyphicon, 
+        .icon-addon.addon-md .fa,
+        .icon-addon .fa {
+            position: absolute;
+            z-index: 2;
+            left: 10px;
+            font-size: 14px;
+            width: 20px;
+            margin-left: -2.5px;
+            text-align: center;
+            padding: 10px 0;
+            top: 1px
+        }
+
+        .icon-addon.addon-lg .form-control {
+            line-height: 1.33;
+            height: 46px;
+            font-size: 18px;
+            p/adding: 10px 16px 10px 40px;
+            padding: 10px 16px 10px 20px;
+        }
+
+        .icon-addon.addon-sm .form-control {
+            height: 30px;
+            padding: 5px 10px 5px 28px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .icon-addon.addon-lg .fa,
+        .icon-addon.addon-lg .glyphicon {
+            font-size: 18px;
+            margin-left: 0;
+            left: 11px;
+            top: 4px;
+        }
+
+        .icon-addon.addon-md .form-control,
+        .icon-addon .form-control {
+            padding-left: 30px;
+            float: left;
+            font-weight: normal;
+        }
+
+        .icon-addon.addon-sm .fa,
+        .icon-addon.addon-sm .glyphicon {
+            margin-left: 0;
+            font-size: 12px;
+            left: 5px;
+            top: -1px
+        }
+
+        .icon-addon .form-control:focus + .glyphicon,
+        .icon-addon:hover .glyphicon,
+        .icon-addon .form-control:focus + .fa,
+        .icon-addon:hover .fa {
+            color: #2580db;
+        }
+
+        .input-group-addon {
+          border-radius: 0 !important;  
+        }
+        input {
+          border-radius: 0 !important;
+        }
+        button {
+            border-radius: 0 !important;
+        }
+
+        .chat-input-gap {
+            height:80px !important;
+        }
+        .chat-input-group-bottom {
+            position: fixed;
+            left:0px;
+            right:0px;
+            bottom:48px;
+            m/argin:0px !important;
+            padding-bottom:10px !important;
+            padding-left:10px !important;
+            padding-right:10px !important;
+            b/ackground-color:#fff !important;
+            z-index:1080;
+        }
+
+        .clearfix {
+            height: 0px;
+            clear:both;
+            float:none;
+        }
+
+        .redi {
+            background-color: #333 !important;
+        }
+
+        .text-align-left {
+            text-align: left;
+        }
+
+        .text-align-right {
+            text-align: right;
+        }
+
+    </style>
+
+    <style>
+        input,
+        textarea:focus,
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        input[type="datetime"]:focus,
+        input[type="datetime-local"]:focus,
+        input[type="date"]:focus,
+        input[type="month"]:focus,
+        input[type="time"]:focus,
+        input[type="week"]:focus,
+        input[type="number"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="color"]:focus,
+        .uneditable-input:focus {
+            b/ackground-color:red !important;
+            border-color: rgba(82, 168, 236, 0.8) !important;
+            outline: 0 !important;
+            outline: thin dotted \9 !important;
+            /* IE6-9 */
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6) !important;
+            -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6) !important;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6) !important;
+            
+            outline:none !important; 
+            box-shadow:none !important;
+            border:1px solid #ddd !important;
+        }
+    </style>
+
+</body>
+
+</html>
